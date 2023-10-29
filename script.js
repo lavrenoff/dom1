@@ -46,7 +46,7 @@ function dataList(db) {
         </div>        
         `);
 
-        if (Number(item.maxNumber) === Number(item.currentNumber)) {
+        if (item.maxNumber <= item.currentNumber) {
             const btn = document.getElementById(`${item.id}`);
             btn.classList.add('disabled');
         }
